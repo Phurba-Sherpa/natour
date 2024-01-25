@@ -1,0 +1,30 @@
+{
+  "name": "natour",
+  "version": "1.0.0",
+  "description": "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phurba-Sherpa/natour.git"
+  },
+  "keywords": [
+    "CSS",
+    "Responsive Design",
+    "Advaced CSS",
+    "SASS",
+    "Flex box",
+    "CSS Grid"
+  ],
+  "author": "Phurba Sherpa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phurba-Sherpa/natour/issues"
+  },
+  "homepage": "https://github.com/Phurba-Sherpa/natour#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
