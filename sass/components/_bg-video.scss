@@ -6,4 +6,8 @@
     height: 100%;
     opacity: .15;
     z-index: -10;
+    &__content {
+        height: 100%;
+        object-fit: cover;
+    }
 }
