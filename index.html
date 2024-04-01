@@ -59,9 +59,17 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3">
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                            sizes="(max-width: 37.5em) 25vw, (max-width: 56.25em) 17vw, (max-width: 75em) 25%, 300px"
+                            class="composition__photo composition__photo--p1" alt="photo 1" />
+
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                            sizes="(max-width: 37.5em) 25vw, (max-width: 56.25em) 17vw, (max-width: 75em) 25%, 300px"
+                            class="composition__photo composition__photo--p2" alt="photo 2" />
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                            sizes="(max-width: 37.5em) 25vw, (max-width: 56.25em) 17vw, (max-width: 75em) 25%, 300px"
+                            class="composition__photo composition__photo--p3" alt="photo 3" />
+
                     </div>
                 </div>
             </div>
@@ -213,7 +221,7 @@
             </div>
         </section>
         <section class="stories">
-            
+
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="./img/video.mp4" type="video/mp4">
@@ -241,7 +249,7 @@
                             distinctio iusto illum? Reprehenderit!cum id sit distinctio iusto illum? Reprehenderit!</p>
                     </div>
                 </div>
-               
+
             </div>
             <div class="row">
                 <div class="story">
@@ -272,12 +280,14 @@
                         <form action="#" class="form">
                             <h2 class="heading-secondary u-margin-bottom-medium">Start booking now</h2>
                             <div class="form__group">
-                                <input type="text" autocomplete="off" placeholder="Full name" class="form__input" id="fullName" required />
+                                <input type="text" autocomplete="off" placeholder="Full name" class="form__input"
+                                    id="fullName" required />
                                 <label for="fullName" class="form__label">Full name</label>
                             </div>
 
                             <div class="form__group">
-                                <input autocomplete="off" type="email" placeholder="Email address" class="form__input" id="email" required />
+                                <input autocomplete="off" type="email" placeholder="Email address" class="form__input"
+                                    id="email" required />
                                 <label for="email" class="form__label">
                                     Email address</label>
                             </div>
@@ -310,7 +320,11 @@
     </main>
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo">
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                    media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="full logo">
+            </picture>
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -325,7 +339,9 @@
                 </div>
             </div>
             <div class="col-1-of-2">
-                <p class="footer__copyright">Built by <a href="#" class="footer__link">Phurba Sherpa</a> during online course <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Phurba Sherpa. A credit to the original author, Jonas Schmedtman.</p>
+                <p class="footer__copyright">Built by <a href="#" class="footer__link">Phurba Sherpa</a> during online
+                    course <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Phurba
+                    Sherpa. A credit to the original author, Jonas Schmedtman.</p>
             </div>
         </div>
     </footer>
@@ -339,13 +355,20 @@
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
-                <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis in eu mi bibendum neque. Bibendum neque egestas congue quisque. Auctor elit sed vulputate mi sit. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Sagittis aliquam malesuada bibendum arcu vitae. Interdum varius sit amet mattis. Eget egestas purus viverra accumsan in nisl nisi. Quam lacus suspendisse faucibus interdum posuere. Sed felis eget velit aliquet sagittis id consectetur. Ac auctor augue mauris augue. Sed tempus urna et pharetra pharetra massa. Erat nam at lectus urna duis.</p>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                    booking</h3>
+                <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Turpis in eu mi bibendum neque. Bibendum neque egestas
+                    congue quisque. Auctor elit sed vulputate mi sit. Faucibus purus in massa tempor nec feugiat nisl
+                    pretium fusce. Sagittis aliquam malesuada bibendum arcu vitae. Interdum varius sit amet mattis. Eget
+                    egestas purus viverra accumsan in nisl nisi. Quam lacus suspendisse faucibus interdum posuere. Sed
+                    felis eget velit aliquet sagittis id consectetur. Ac auctor augue mauris augue. Sed tempus urna et
+                    pharetra pharetra massa. Erat nam at lectus urna duis.</p>
                 <a href="#" class="btn btn--primary">Book now</a>
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>
