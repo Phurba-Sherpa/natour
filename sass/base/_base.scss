@@ -36,3 +36,8 @@ img, video {
     max-width: 100%;
     display: block;
 }
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}

@@ -11,11 +11,17 @@
     visibility: hidden;
     transition: all .3s;
 
+    @supports (--webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        --webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);
+    }
+
     &__content {
         @include centerBlock;
         width: 75%;
 
-        
+
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
@@ -47,7 +53,7 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
-       
+
     }
 
     &__text {
@@ -57,33 +63,34 @@
         column-gap: 3em;
         column-rule: 1px solid $color-grey-light-2;
         hyphens: auto;
+
         @include respond(tab-land) {
             column-count: 1;
 
         }
     }
 
-    &__img {
-    }
+    &__img {}
 
     &__close {
+
         &:link,
         &:visited {
-        position: absolute;
-        color: $color-grey-dark;
-        // top: -.7rem;
-        top: 1.8rem;
-        right: 2.5rem;
-        font-size: 3.2rem;
-        text-decoration: none;
-        display: inline-block;
-        line-height: 1;
-        transition: all .2s;
+            position: absolute;
+            color: $color-grey-dark;
+            // top: -.7rem;
+            top: 1.8rem;
+            right: 2.5rem;
+            font-size: 3.2rem;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 1;
+            transition: all .2s;
 
-        @include respond(tab-port) {
-            top: 7rem;
-            right: 5rem;
-        }
+            @include respond(tab-port) {
+                top: 7rem;
+                right: 5rem;
+            }
         }
 
         &:hover,
@@ -93,6 +100,7 @@
         }
 
     }
+
     &:target {
         opacity: 1;
         visibility: visible;
